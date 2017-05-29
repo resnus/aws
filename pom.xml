@@ -19,6 +19,9 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <aws.java.sdk-version>1.11.136</aws.java.sdk-version>
         <aws.lambda.java.core-version>1.1.0</aws.lambda.java.core-version>
+        <junit.version>4.11</junit.version>
+        <commons.logging-version>1.2</commons.logging-version>
+        <log4j-version>1.2.17</log4j-version>
     </properties>
 
     <dependencyManagement>
@@ -40,6 +43,28 @@
                 <groupId>com.amazonaws</groupId>
                 <artifactId>aws-lambda-java-core</artifactId>
                 <version>${aws.lambda.java.core-version}</version>
+            </dependency>
+
+            <!-- LOGGING -->
+            <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${log4j-version}</version>
+            </dependency>
+            <!-- https://mvnrepository.com/artifact/commons-logging/commons-logging -->
+            <dependency>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+                <version>${commons.logging-version}</version>
+            </dependency>
+
+            <!-- TEST -->
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>${junit.version}</version>
+                <scope>test</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>
