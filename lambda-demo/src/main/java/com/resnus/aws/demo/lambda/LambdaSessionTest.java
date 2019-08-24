@@ -11,7 +11,7 @@ import org.apache.log4j.Logger;
 /**
  * Created by resnus on 5/29/2017.
  */
-public class LambdaSessionTest implements RequestHandler<Request,Response> {
+public class LambdaSessionTest implements RequestHandler <Request,Response> {
 
     private static int staticVal = 0;
     private int instanceVal = 0;
